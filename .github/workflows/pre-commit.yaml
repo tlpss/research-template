@@ -3,6 +3,8 @@
 
 name: Format
 
+on: push # run always
+
 jobs:
   pre-commit:
     name: Format
