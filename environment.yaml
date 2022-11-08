@@ -16,7 +16,7 @@ dependencies:
   - pip:
     - numpy
     - matplotlib
-    - scikit
+    - scipy
     - wandb
     - stable-baselines3
     - pytorch-lightning
