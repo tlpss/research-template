@@ -7,5 +7,5 @@
     "github_username": "tlpss",
     "license": "MIT",
     "use_mypy": "y",
-    "use_mkdocs": "y"
+    "python_version": "3.10"
 }

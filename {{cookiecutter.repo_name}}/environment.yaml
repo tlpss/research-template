@@ -8,7 +8,7 @@ channels:
   - pytorch
   - conda-forge
 dependencies:
-  - python=3.9
+  - python={{cookiecutter.python_version}}
   - pytorch
   - cudatoolkit=11.3
   - torchvision
@@ -24,4 +24,5 @@ dependencies:
     - timm
     - pytest
     - pre-commit
+    - mypy
     - -e {{cookiecutter.package_name}}/
