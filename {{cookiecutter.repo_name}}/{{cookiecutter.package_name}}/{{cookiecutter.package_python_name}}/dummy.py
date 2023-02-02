@@ -1,4 +1,4 @@
-def dummy_func(string: str="dummy") -> str:
+def dummy_func(string: str = "dummy") -> str:
     """Dummy function that simply returns the input string.
 
     Args:
