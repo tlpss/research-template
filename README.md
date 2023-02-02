@@ -38,7 +38,7 @@ Here you have to create the git repository manually and push the project to git 
 The project will wrap the python package in another directory, so that you could have multiple packages in the same repo (each with their own setup.py file), or add other files/code. Feel free te remove this additional layer but moving the content of the package directory to the top level and subsequently removing the directory.
 
 
-### More about creating python projects
+## More about creating python projects
 There is no 'ultimate' setup here. It heavily depends on the scope and type of the project, the experience of your collaborators and yourself and ultimately personal preferences. 
 E.g. I don't use poetry but conda as dependency manager, as this is more common in the research community. I also don't configure advanced testing tools like coverage etc, as these are typically not worth the time for smaller codebases imo. Same goes for documentation, no tools for documentation such as Sphinx or mkdocs are included, as most research projects don't need them. A good readme typically suffices.
 
