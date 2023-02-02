@@ -1,17 +1,15 @@
 # opinionated Cookiecutter python research template
+This is an opinionated template that I use for python research projects.
+It uses cookiecutter to dynamically create the project. Take a look at the `cookiecutter.json`file to see what is configurable.
 
-
-This is an opinionated template for a python research project, with the goal of reducing the time to set up a new project (repository).
-It uses cookiecutter to dynamically create the project, based on your configurations. Take a look at the `cookiecutter.json`file to see what is configurable.
-
-The template is inspired by personal experience and this [python package template](https://github.com/waynerv/cookiecutter-pypackage/tree/master), (but is a little less 'fullblown' as it is aimed at (shorter-lived) research projects instead of more generic software projects). 
+The template content is inspired by personal experience and preferences, the implementation in cookiecutter is inspired by [python package template](https://github.com/waynerv/cookiecutter-pypackage/tree/master), (but is a little less 'fullblown' as it is aimed at (shorter-lived) research projects instead of more generic software projects). 
 
 It will perform/configure the following:
 - create a python package to wrap your code, making the annoying issues with python paths a thing of the past.
-
 - configure pytest for testing
 - configure pre-commit to conveniently bundle Black, flake8, isort and some other formatting tools
-- configure [optionally] mypy for type checking. This is highly recommended, as in my experience you usually end up with specifying some type information in the docstrings anyway. Might as well make it more formal.
+- configure (optionally) mypy for type checking. This is highly recommended, as in my experience you usually end up with specifying some type information in he docstrings anyway. Might as well make it more formal.
+- (optionally) configure [darglint](https://github.com/terrencepreilly/darglint) to validate docstrings (as I have a tendency to not update docstrings when refactoring)
 - github actions to test all of the above on each PR or commit to the master branch.
 - add a simple MIT license
 
@@ -37,9 +35,9 @@ Here you have to create the git repository manually and push the project to git 
 
 The project will wrap the python package in another directory, so that you could have multiple packages in the same repo (each with their own setup.py file), or add other files/code. Feel free te remove this additional layer but moving the content of the package directory to the top level and subsequently removing the directory.
 
-
 ## More about creating python projects
 There is no 'ultimate' setup here. It heavily depends on the scope and type of the project, the experience of your collaborators and yourself and ultimately personal preferences. 
 E.g. I don't use poetry but conda as dependency manager, as this is more common in the research community. I also don't configure advanced testing tools like coverage etc, as these are typically not worth the time for smaller codebases imo. Same goes for documentation, no tools for documentation such as Sphinx or mkdocs are included, as most research projects don't need them. A good readme typically suffices.
 
-Some pointers to learn more about setting up python (research) projects: [Good research code handbook](https://goodresearch.dev/), [python package template](https://github.com/waynerv/cookiecutter-pypackage/tree/master).
+Some pointers to learn more about setting up python (research) projects: [Good research code handbook](https://goodresearch.dev/), [python package template](https://github.com/waynerv/cookiecutter-pypackage/tree/master), [Radix.ai resource page](https://github.com/radix-ai/awesome-machine-learning-engineer).
+

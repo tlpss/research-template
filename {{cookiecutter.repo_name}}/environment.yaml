@@ -25,4 +25,5 @@ dependencies:
     - pytest
     - pre-commit
     - mypy
+    - darglint
     - -e {{cookiecutter.package_name}}/
