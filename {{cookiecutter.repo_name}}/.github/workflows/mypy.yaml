@@ -23,6 +23,6 @@ jobs:
         environment-file: environment.yaml
         cache-env: true
     - name: Run type checker
-        shell: bash -l {0}
-        run: |
-          mypy .
+      shell: bash -l {0}
+      run: |
+        mypy .
