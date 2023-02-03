@@ -1,6 +1,9 @@
 import os 
+import pathlib
+from shutil import rmtree
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
+ROOT_DIR = pathlib.Path(PROJECT_DIRECTORY).parent
 
 REMOVE_PATHS = []
 
@@ -18,3 +21,14 @@ for path in REMOVE_PATHS:
             os.rmdir(path)
         else:
             os.unlink(path)
+
+
+if os.path.exists(ROOT_DIR / ".git"):
+    print("test")
+    # was created in a git repo, so we should remove the template
+    print("heh")
+    #os.rmdir(os.path.join(ROOT_DIR,"{" + "{" + "cookiecutter.repo_name}}"))
+    rmtree(ROOT_DIR / "test")
+    rmtree(ROOT_DIR  /"hooks")
+    rmtree(ROOT_DIR  /".vscode")
+
