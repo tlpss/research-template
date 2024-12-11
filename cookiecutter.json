@@ -7,5 +7,5 @@
     "github_username": "tlpss",
     "use_mypy": ["y", "n"],
     "use_darglint": ["y", "n"],
-    "python_version": "3.10"
+    "python_version": "3.12"
 }
